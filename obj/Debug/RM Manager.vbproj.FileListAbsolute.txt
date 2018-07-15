@@ -1,0 +1,42 @@
+E:\Projex\RM Manager\obj\Debug\ResolveAssemblyReference.cache
+E:\Projex\RM Manager\obj\Debug\RM_Manager.frmMain.resources
+E:\Projex\RM Manager\obj\Debug\RM_Manager.Resources.resources
+E:\Projex\RM Manager\obj\Debug\RM Manager.vbproj.GenerateResource.Cache
+E:\Projex\RM Manager\bin\Debug\RM Manager.exe.config
+E:\Projex\RM Manager\bin\Debug\RM Manager.exe
+E:\Projex\RM Manager\bin\Debug\RM Manager.pdb
+E:\Projex\RM Manager\bin\Debug\RM Manager.xml
+E:\Projex\RM Manager\obj\Debug\RM Manager.exe
+E:\Projex\RM Manager\obj\Debug\RM Manager.xml
+E:\Projex\RM Manager\obj\Debug\RM Manager.pdb
+E:\Projex\RM Manager\bin\Debug\Interop.JRO.dll
+E:\Projex\RM Manager\obj\Debug\Interop.JRO.dll
+E:\Projex\RM Manager\obj\Debug\RM Manager.vbproj.ResolveComReference.cache
+E:\Projex\RM Manager\obj\Debug\RM_Manager.frmReport.resources
+E:\Projex\RM Manager\obj\Debug\RM_Manager.frmImport.resources
+E:\Projex\RM Manager\bin\Debug\DiskContents.rdlc
+E:\Projex\RM Manager\bin\Debug\TEMPLATE.dat
+E:\Projex\RM Manager\bin\Debug\RMMProcDefs.xml
+E:\Projex\RM Manager\obj\Debug\RM_Manager.vSplash.resources
+E:\Projex\RM Manager\bin\Debug\RMMConfig.xml
+C:\WORK\Projex\RM Manager\bin\Debug\RM Manager.exe.config
+C:\WORK\Projex\RM Manager\obj\Debug\Interop.JRO.dll
+C:\WORK\Projex\RM Manager\obj\Debug\RM Manager.vbproj.ResolveComReference.cache
+C:\WORK\Projex\RM Manager\obj\Debug\RM Manager.exe
+C:\WORK\Projex\RM Manager\obj\Debug\RM Manager.xml
+C:\WORK\Projex\RM Manager\obj\Debug\RM Manager.pdb
+C:\WORK\Projex\RM Manager\obj\Debug\ResolveAssemblyReference.cache
+C:\WORK\Projex\RM Manager\bin\Debug\TEMPLATE.dat
+C:\WORK\Projex\RM Manager\bin\Debug\RMMConfig.xml
+C:\WORK\Projex\RM Manager\bin\Debug\RMMProcDefs.xml
+C:\WORK\Projex\RM Manager\bin\Debug\DiskContents.rdlc
+C:\WORK\Projex\RM Manager\bin\Debug\RM Manager.exe
+C:\WORK\Projex\RM Manager\bin\Debug\RM Manager.pdb
+C:\WORK\Projex\RM Manager\bin\Debug\RM Manager.xml
+C:\WORK\Projex\RM Manager\bin\Debug\Interop.JRO.dll
+C:\WORK\Projex\RM Manager\obj\Debug\RM_Manager.frmImport.resources
+C:\WORK\Projex\RM Manager\obj\Debug\RM_Manager.Resources.resources
+C:\WORK\Projex\RM Manager\obj\Debug\RM_Manager.frmReport.resources
+C:\WORK\Projex\RM Manager\obj\Debug\RM_Manager.vSplash.resources
+C:\WORK\Projex\RM Manager\obj\Debug\RM_Manager.frmMain.resources
+C:\WORK\Projex\RM Manager\obj\Debug\RM Manager.vbproj.GenerateResource.Cache

@@ -1,0 +1,42 @@
+E:\WORK\Projex\RM Manager\bin\x86\Release\RM Manager.exe.config
+E:\WORK\Projex\RM Manager\obj\x86\Release\Interop.JRO.dll
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.vbproj.ResolveComReference.cache
+E:\WORK\Projex\RM Manager\bin\x86\Release\DiskContents.rdlc
+E:\WORK\Projex\RM Manager\bin\x86\Release\TEMPLATE.dat
+E:\WORK\Projex\RM Manager\bin\x86\Release\RMMConfig.xml
+E:\WORK\Projex\RM Manager\bin\x86\Release\RMMProcDefs.xml
+E:\WORK\Projex\RM Manager\bin\x86\Release\RM Manager.exe
+E:\WORK\Projex\RM Manager\bin\x86\Release\RM Manager.pdb
+E:\WORK\Projex\RM Manager\bin\x86\Release\RM Manager.xml
+E:\WORK\Projex\RM Manager\bin\x86\Release\Interop.JRO.dll
+E:\WORK\Projex\RM Manager\obj\x86\Release\ResolveAssemblyReference.cache
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.frmImport.resources
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.Resources.resources
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.frmReport.resources
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.vSplash.resources
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.frmMain.resources
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.vbproj.GenerateResource.Cache
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.exe
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.xml
+E:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.pdb
+D:\WORK\Projex\RM Manager\bin\x86\Release\RM Manager.exe.config
+D:\WORK\Projex\RM Manager\obj\x86\Release\Interop.JRO.dll
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.vbproj.ResolveComReference.cache
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.exe
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.xml
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.pdb
+D:\WORK\Projex\RM Manager\bin\x86\Release\DiskContents.rdlc
+D:\WORK\Projex\RM Manager\bin\x86\Release\TEMPLATE.dat
+D:\WORK\Projex\RM Manager\bin\x86\Release\RMMConfig.xml
+D:\WORK\Projex\RM Manager\bin\x86\Release\RMMProcDefs.xml
+D:\WORK\Projex\RM Manager\bin\x86\Release\RM Manager.exe
+D:\WORK\Projex\RM Manager\bin\x86\Release\RM Manager.pdb
+D:\WORK\Projex\RM Manager\bin\x86\Release\RM Manager.xml
+D:\WORK\Projex\RM Manager\bin\x86\Release\Interop.JRO.dll
+D:\WORK\Projex\RM Manager\obj\x86\Release\ResolveAssemblyReference.cache
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.frmImport.resources
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.Resources.resources
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.frmReport.resources
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.vSplash.resources
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM_Manager.frmMain.resources
+D:\WORK\Projex\RM Manager\obj\x86\Release\RM Manager.vbproj.GenerateResource.Cache

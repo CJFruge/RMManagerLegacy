@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Removable Media Manager Procedure Definition File     -->
+<!-- © 2010 Ventus LLC.  All Rights Reserved.              -->
+<root>
+  <Version>102</Version>
+  <ProcDefs>
+    <_p01>
+      <Name>v_Disk</Name>
+      <Value>AS SELECT Disk.* FROM Disk WHERE (Disk.bDeleted = No);</Value>
+    </_p01>
+    <_p02>
+      <Name>v_File</Name>
+      <Value>AS SELECT File.* FROM File WHERE (File.bDeleted = No);</Value>
+    </_p02>
+    <_p03>
+      <Name>v_Folder</Name>
+      <Value>AS SELECT Folder.* FROM Folder WHERE (Folder.bDeleted = No);</Value>
+    </_p03>
+    <_p04>
+      <Name>sp_ctl_GetRootFolders</Name>
+      <Value>AS SELECT v_Folder.Folder_ID, v_Folder.Name, v_Disk.UneekID, v_Folder.Disk_ID, v_Disk.DateAdded, v_Disk.Type 
+        FROM v_Disk INNER JOIN v_Folder ON v_Disk.Disk_ID = v_Folder.Disk_ID WHERE (v_Folder.Disk_ID + v_Folder.Parent_ID = 0) ORDER BY v_Disk.Sequence;
+      </Value>
+    </_p04>
+    <_p05>
+      <Name>sp_ctl_GetFolderContents</Name>
+      <Value>(inFolderID LONG) AS 
+        SELECT v_File.File_ID, v_File.Folder_ID, v_File.Name, v_File.Alias, v_File.DateModified, v_File.FileSize, v_File.Extension 
+        FROM v_File WHERE (v_File.Folder_ID = inFolderID) ORDER BY v_File.Name;
+      </Value>
+    </_p05>
+    <_p06>
+      <Name>sp_ctl_GetChildFolders</Name>
+      <Value>(inParentID LONG) AS 
+        SELECT v_Folder.Folder_ID, v_Folder.Disk_ID, v_Folder.Name, v_Folder.DateModified 
+        FROM v_Folder WHERE (Parent_ID = inParentID) ORDER BY v_Folder.Name;
+      </Value>
+    </_p06>
+    <_p07>
+      <Name>sp_ctl_GetDiskFolderInfo_FileID</Name>
+      <Value>(inFileID LONG) AS
+        SELECT Disk.UneekID, Disk.Sequence, Disk.Name, Disk.DateAdded, File.Name, Folder.Name, File.FileSize, File.Alias, File.DateModified, File.Folder_ID
+        FROM (Disk INNER JOIN Folder ON Disk.Disk_ID = Folder.Disk_ID) INNER JOIN File ON Folder.Folder_ID = File.Folder_ID
+        WHERE (File.File_ID = inFileID);
+      </Value>
+    </_p07>
+    <_p08>
+      <Name>sp_ctl_GetDiskFolderInfo_FolderID</Name>
+      <Value>(inFolderID LONG) AS
+        SELECT Disk.UneekID, Disk.Sequence, Disk.Name, Folder.DateModified, Disk.DateAdded, Folder.Name, Folder.Folder_ID
+        FROM Disk INNER JOIN Folder ON Disk.Disk_ID = Folder.Disk_ID
+        WHERE (Folder.Folder_ID = inFolderID);
+      </Value>
+    </_p08>
+    <_p09>
+      <Name>sp_ctl_GetDiskInfo</Name>
+      <Value>(inDiskID LONG) AS
+        SELECT Disk.UneekID, Disk.Sequence, Disk.Type, Disk.Name, Disk.DateAdded
+        FROM Disk WHERE (Disk.Disk_ID = inDiskID);
+      </Value>
+    </_p09>
+    <_p10>
+      <Name>sp_ctl_GetFolderContents_SearchAlias</Name>
+      <Value>(inSearchName VARCHAR(255)) AS
+        SELECT v_File.Folder_ID, v_File.Name, v_File.Alias, v_File.File_ID, v_File.Extension, v_File.DateModified, v_File.FileSize
+        FROM 
+        v_File INNER JOIN v_Disk ON v_File.Disk_ID = v_Disk.Disk_ID 
+        WHERE (v_File.Alias LIKE '%' + inSearchName + '%')
+        ORDER BY v_File.Alias;
+      </Value>
+    </_p10>
+    <_p11>
+      <Name>sp_ctl_GetFolderContents_SearchAll</Name>
+      <Value>
+        (inSearchName VARCHAR(255)) AS
+        SELECT v_Folder.Folder_ID, v_File.Name, v_File.Alias, v_File.File_ID, v_File.Extension, v_File.DateModified, v_File.FileSize
+        FROM
+        (v_File INNER JOIN v_Folder ON v_File.Folder_ID = v_Folder.Folder_ID) 
+        INNER JOIN v_Disk ON (v_Folder.Disk_ID = v_Disk.Disk_ID) AND (v_File.Disk_ID = v_Disk.Disk_ID)
+        WHERE (v_File.Alias LIKE '%' + inSearchName + '%') OR (v_File.Name LIKE '%' + inSearchName + '%') OR (v_Folder.Name LIKE '%' + inSearchName + '%')
+        ORDER BY v_File.Name;
+      </Value>
+    </_p11>
+    <_p12>
+      <Name>sp_ctl_GetFolderContents_SearchFiles</Name>
+      <Value>(inSearchName VARCHAR(255)) AS
+        SELECT v_File.Folder_ID, v_File.Name, v_File.Alias, v_File.File_ID, v_File.Extension, v_File.DateModified, v_File.FileSize
+        FROM 
+        v_File INNER JOIN v_Disk ON v_File.Disk_ID = v_Disk.Disk_ID 
+        WHERE (v_File.Name LIKE '%' + inSearchName + '%')
+        ORDER BY v_File.Name;
+      </Value>
+    </_p12>
+    <_p13>
+      <Name>sp_ctl_GetFolderContents_SearchFolders</Name>
+      <Value>(inSearchName VARCHAR(255)) AS
+        SELECT v_File.Name, v_File.Alias, v_File.DateModified, v_File.Extension, v_File.FileSize, v_File.File_ID
+        FROM 
+        (v_File INNER JOIN v_Folder ON v_File.Folder_ID = v_Folder.Folder_ID)
+        INNER JOIN v_Disk ON v_Folder.Disk_ID = v_Disk.Disk_ID
+        WHERE (v_Folder.Name LIKE '%' + inSearchName + '%')
+        ORDER BY v_File.Name;
+      </Value>
+    </_p13>
+    <_p14>
+      <Name>sp_del_MarkedDisks</Name>
+      <Value>AS DELETE Disk.* FROM Disk WHERE (Disk.bDeleted = Yes);
+      </Value>
+    </_p14>
+    <_p15>
+      <Name>sp_del_MarkedFiles</Name>
+      <Value>AS DELETE File.* FROM File WHERE (File.bDeleted = Yes)</Value>
+    </_p15>
+    <_p16>
+      <Name>sp_del_MarkedFolders</Name>
+      <Value>AS DELETE Folder.* FROM Folder WHERE (Folder.bDeleted = Yes)</Value>
+    </_p16>
+    <_p17>
+      <Name>sp_GetDiskID</Name>
+      <Value>(inUneekID VARCHAR(255)) AS 
+        SELECT Disk.Disk_ID FROM Disk WHERE (Disk.UneekID = inUneekID);
+      </Value>
+    </_p17>
+    <_p18>
+      <Name>sp_GetDiskID_FileID</Name>
+      <Value>(inFileID LONG) AS
+        SELECT Disk.Disk_ID, Disk.UneekID
+        FROM File INNER JOIN Disk ON File.Disk_ID = Disk.Disk_ID
+        WHERE (File.File_ID = inFileID);
+      </Value>
+    </_p18>
+    <_p19>
+      <Name>sp_GetDiskID_FolderID</Name>
+      <Value>(inFolderID LONG) AS
+        SELECT Disk.Disk_ID, Disk.UneekID
+        FROM Disk INNER JOIN Folder ON Disk.Disk_ID = Folder.Disk_ID
+        WHERE (Folder.Folder_ID = inFolderID);
+      </Value>
+    </_p19>
+    <_p20>
+      <Name>sp_GetFolderID</Name>
+      <Value>(inDiskID LONG, inParentID LONG, inSeqID LONG) AS 
+        SELECT Folder.Folder_ID FROM Folder
+        WHERE (Folder.Disk_ID = inDiskID AND Folder.Parent_ID = inParentID AND Folder.Seq_ID = inSeqID);
+      </Value>
+    </_p20>
+    <_p21>
+      <Name>sp_GetFolderID_FileID</Name>
+      <Value>(inFileID LONG) AS 
+        SELECT File.Folder_ID FROM File
+        WHERE (File.File_ID = inFileID);
+      </Value>
+    </_p21>
+    <_p22>
+      <Name>sp_GetMaxDiskSequence</Name>
+      <Value>AS 
+        SELECT Max(Sequence) AS MaxSequence FROM Disk;
+      </Value>
+    </_p22>
+    <_p23>
+      <Name>sp_GetParentFolder</Name>
+      <Value>(inFolderID LONG) AS 
+        SELECT Folder.Parent_ID, Folder.Name FROM Folder
+        WHERE (Folder.Folder_ID = inFolderID);
+      </Value>
+    </_p23>
+    <_p24>
+      <Name>sp_rpt_DiskContents</Name>
+      <Value>(inDiskID LONG) AS
+        SELECT Disk.Name AS Disk_Name, Disk.DateAdded, Disk.Sequence, Folder.Name AS Folder_Name, Folder.DateModified AS Folder_DateModified, 
+        File.Name AS File_Name, File.DateModified AS File_DateModified, File.FileSize, Disk.Disk_ID
+        FROM (Disk INNER JOIN Folder ON Disk.Disk_ID = Folder.Disk_ID) INNER JOIN File ON Folder.Folder_ID = File.Folder_ID
+        WHERE (Disk.Disk_ID = inDiskID);
+      </Value>
+    </_p24>
+    <_p25>
+      <Name>sp_upd_DeleteDisk</Name>
+      <Value>(inDiskID LONG) AS
+        UPDATE Disk SET Disk.bDeleted = Yes
+        WHERE (Disk.Disk_ID = inDiskID);
+      </Value>
+    </_p25>
+    <_p26>
+      <Name>sp_upd_DeleteFile</Name>
+      <Value>(inFileID LONG) AS
+        UPDATE File SET File.bDeleted = Yes
+        WHERE (File.File_ID = inFileID);
+      </Value>
+    </_p26>
+    <_p27>
+      <Name>sp_upd_DeleteFolder</Name>
+      <Value>(inFolderID LONG) AS
+        UPDATE Folder SET Folder.bDeleted = Yes
+        WHERE (Folder.File_ID = inFolderID);
+      </Value>
+    </_p27>
+    <_p28>
+      <Name>sp_upd_DiskSequence</Name>
+      <Value>(inDiskID LONG, inSequence LONG) AS
+        UPDATE Disk SET Sequence = inSequence
+        WHERE (Disk.Disk_ID = inDiskID);
+      </Value>
+    </_p28>
+    <_p29>
+      <Name>sp_upd_FileAlias</Name>
+      <Value>(inFileID LONG, inAlias VARCHAR(255)) AS
+        UPDATE File SET File.Alias = inAlias
+        WHERE (File.File_ID = inFileID);
+      </Value>
+    </_p29>
+    <_p30>
+      <Name>sp_Add_Disk</Name>
+      <Value>(inName VARCHAR(255), inUneekID VARCHAR(255), inType LONG, inSequence LONG) AS
+        INSERT INTO Disk ( Name, UneekID, Type, Sequence )
+        VALUES (inName, inUneekID, inType, inSequence);
+      </Value>
+    </_p30>
+    <_p31>
+      <Name>sp_Add_File</Name>
+      <Value>(inName VARCHAR(255), inAlias VARCHAR(255), inDateModified DATETIME, inExtension VARCHAR(255), 
+      inSize LONG, inCommand VARCHAR(255), inFolderID LONG, inDiskID LONG) AS
+        INSERT INTO File ( Name, Alias, DateModified, Extension, FileSize, Command, Folder_ID, Disk_ID )
+        VALUES (inName, inAlias, inDateModified, inExtension, inSize, inCommand, inFolderID, inDiskID);
+      </Value>
+    </_p31>
+    <_p32>
+      <Name>sp_Add_Folder</Name>
+      <Value>(inName VARCHAR(255), inParentID LONG, inDiskID LONG, inSeqID LONG, inDateModified DATETIME) AS
+        INSERT INTO Folder ( Name, Parent_ID, Disk_ID, Seq_ID, DateModified )
+        VALUES (inName, inParentID, inDiskID, inSeqID, inDateModified);
+      </Value>
+    </_p32>
+    <_p33>
+      <Name>sp_del_MarkedDisks</Name>
+      <Value>AS DELETE Disk.* FROM Disk WHERE (Disk.bDeleted = Yes);
+      </Value>
+    </_p33>
+    <_p34>
+      <Name>sp_del_MarkedFiles</Name>
+      <Value>AS DELETE File.* FROM File WHERE (File.bDeleted = Yes)</Value>
+    </_p34>
+    <_p35>
+      <Name>sp_del_MarkedFolders</Name>
+      <Value>AS DELETE Folder.* FROM Folder WHERE (Folder.bDeleted = Yes)</Value>
+    </_p35>
+    <_p36>
+      <Name>sp_ctl_GetFolderContents_SearchDates</Name>
+      <Value>(inSearchFrom DATETIME, inSearchTo DATETIME) AS
+        SELECT v_File.Folder_ID, v_File.Name, v_File.Alias, v_File.File_ID, v_File.Extension, v_File.DateModified, v_File.FileSize
+        FROM v_File
+        WHERE (v_File.DateModified BETWEEN inSearchFrom AND inSearchTo)
+        ORDER BY v_File.DateModified;
+      </Value>
+    </_p36>
+    <_p37>
+      <Name>sp_ctl_GetFolderContents_SearchTypes</Name>
+      <Value>(inSearchName VARCHAR(255)) AS
+        SELECT v_File.Folder_ID, v_File.Name, v_File.Alias, v_File.File_ID, v_File.Extension, v_File.DateModified, v_File.FileSize
+        FROM 
+        v_File INNER JOIN v_Disk ON v_File.Disk_ID = v_Disk.Disk_ID 
+        WHERE (v_File.Extension LIKE '%' + inSearchName + '%')
+        ORDER BY v_File.Name;
+      </Value>
+    </_p37>
+    <_p38></_p38>
+    <_p39></_p39>
+    <_p40></_p40>
+    <_p41></_p41>
+    <_p42></_p42>
+    <_p43></_p43>
+    <_p44></_p44>
+  </ProcDefs>
+</root>

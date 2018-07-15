@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RMMInstall", "RMMInstall.vdproj", "{29B7E647-9DEE-4D52-B6EB-77E86F6AF011}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{29B7E647-9DEE-4D52-B6EB-77E86F6AF011}.Debug.ActiveCfg = Release
+		{29B7E647-9DEE-4D52-B6EB-77E86F6AF011}.Debug.Build.0 = Release
+		{29B7E647-9DEE-4D52-B6EB-77E86F6AF011}.Release.ActiveCfg = Release
+		{29B7E647-9DEE-4D52-B6EB-77E86F6AF011}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+E:\Projex\RM Manager\bin\Release\RM Manager.exe.config
+E:\Projex\RM Manager\bin\Release\RM Manager.exe
+E:\Projex\RM Manager\bin\Release\RM Manager.pdb
+E:\Projex\RM Manager\bin\Release\RM Manager.xml
+E:\Projex\RM Manager\obj\Release\ResolveAssemblyReference.cache
+E:\Projex\RM Manager\obj\Release\RM_Manager.frmMain.resources
+E:\Projex\RM Manager\obj\Release\RM_Manager.Resources.resources
+E:\Projex\RM Manager\obj\Release\RM Manager.vbproj.GenerateResource.Cache
+E:\Projex\RM Manager\obj\Release\RM Manager.exe
+E:\Projex\RM Manager\obj\Release\RM Manager.xml
+E:\Projex\RM Manager\obj\Release\RM Manager.pdb
+E:\Projex\RM Manager\obj\Release\Interop.JRO.dll
+E:\Projex\RM Manager\obj\Release\RM Manager.vbproj.ResolveComReference.cache
+E:\Projex\RM Manager\bin\Release\Interop.JRO.dll
+E:\Projex\RM Manager\obj\Release\RM_Manager.frmReport.resources
+E:\Projex\RM Manager\obj\Release\RM_Manager.frmImport.resources
+E:\Projex\RM Manager\bin\Release\DiskContents.rdlc
+E:\Projex\RM Manager\bin\Release\TEMPLATE.dat
+E:\Projex\RM Manager\bin\Release\RMMProcDefs.xml
+E:\Projex\RM Manager\obj\Release\RM_Manager.vSplash.resources
+E:\Projex\RM Manager\bin\Release\RMMConfig.xml
+C:\WORK\Projex\RM Manager\bin\Release\DiskContents.rdlc
+C:\WORK\Projex\RM Manager\bin\Release\TEMPLATE.dat
+C:\WORK\Projex\RM Manager\bin\Release\RMMConfig.xml
+C:\WORK\Projex\RM Manager\bin\Release\RMMProcDefs.xml
+C:\WORK\Projex\RM Manager\bin\Release\RM Manager.exe.config
+C:\WORK\Projex\RM Manager\bin\Release\RM Manager.exe
+C:\WORK\Projex\RM Manager\bin\Release\RM Manager.pdb
+C:\WORK\Projex\RM Manager\bin\Release\RM Manager.xml
+C:\WORK\Projex\RM Manager\bin\Release\Interop.JRO.dll
+C:\WORK\Projex\RM Manager\obj\Release\ResolveAssemblyReference.cache
+C:\WORK\Projex\RM Manager\obj\Release\Interop.JRO.dll
+C:\WORK\Projex\RM Manager\obj\Release\RM Manager.vbproj.ResolveComReference.cache
+C:\WORK\Projex\RM Manager\obj\Release\RM_Manager.frmImport.resources
+C:\WORK\Projex\RM Manager\obj\Release\RM_Manager.Resources.resources
+C:\WORK\Projex\RM Manager\obj\Release\RM_Manager.frmReport.resources
+C:\WORK\Projex\RM Manager\obj\Release\RM_Manager.vSplash.resources
+C:\WORK\Projex\RM Manager\obj\Release\RM_Manager.frmMain.resources
+C:\WORK\Projex\RM Manager\obj\Release\RM Manager.vbproj.GenerateResource.Cache
+C:\WORK\Projex\RM Manager\obj\Release\RM Manager.exe
+C:\WORK\Projex\RM Manager\obj\Release\RM Manager.xml
+C:\WORK\Projex\RM Manager\obj\Release\RM Manager.pdb

@@ -1,0 +1,63 @@
+C:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.exe.config
+C:\WORK\Projex\RM Manager\obj\x86\Debug\Interop.JRO.dll
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.vbproj.ResolveComReference.cache
+C:\WORK\Projex\RM Manager\bin\x86\Debug\DiskContents.rdlc
+C:\WORK\Projex\RM Manager\bin\x86\Debug\TEMPLATE.dat
+C:\WORK\Projex\RM Manager\bin\x86\Debug\RMMConfig.xml
+C:\WORK\Projex\RM Manager\bin\x86\Debug\RMMProcDefs.xml
+C:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.exe
+C:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.pdb
+C:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.xml
+C:\WORK\Projex\RM Manager\bin\x86\Debug\Interop.JRO.dll
+C:\WORK\Projex\RM Manager\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.frmImport.resources
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.Resources.resources
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.frmReport.resources
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.vSplash.resources
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.frmMain.resources
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.vbproj.GenerateResource.Cache
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.exe
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.xml
+C:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.pdb
+E:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.exe.config
+E:\WORK\Projex\RM Manager\obj\x86\Debug\Interop.JRO.dll
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.vbproj.ResolveComReference.cache
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.exe
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.xml
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.pdb
+E:\WORK\Projex\RM Manager\bin\x86\Debug\DiskContents.rdlc
+E:\WORK\Projex\RM Manager\bin\x86\Debug\TEMPLATE.dat
+E:\WORK\Projex\RM Manager\bin\x86\Debug\RMMConfig.xml
+E:\WORK\Projex\RM Manager\bin\x86\Debug\RMMProcDefs.xml
+E:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.exe
+E:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.pdb
+E:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.xml
+E:\WORK\Projex\RM Manager\bin\x86\Debug\Interop.JRO.dll
+E:\WORK\Projex\RM Manager\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.frmImport.resources
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.Resources.resources
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.frmReport.resources
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.vSplash.resources
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.frmMain.resources
+E:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.vbproj.GenerateResource.Cache
+D:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.exe.config
+D:\WORK\Projex\RM Manager\obj\x86\Debug\Interop.JRO.dll
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.vbproj.ResolveComReference.cache
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.exe
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.xml
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.pdb
+D:\WORK\Projex\RM Manager\bin\x86\Debug\DiskContents.rdlc
+D:\WORK\Projex\RM Manager\bin\x86\Debug\TEMPLATE.dat
+D:\WORK\Projex\RM Manager\bin\x86\Debug\RMMConfig.xml
+D:\WORK\Projex\RM Manager\bin\x86\Debug\RMMProcDefs.xml
+D:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.exe
+D:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.pdb
+D:\WORK\Projex\RM Manager\bin\x86\Debug\RM Manager.xml
+D:\WORK\Projex\RM Manager\bin\x86\Debug\Interop.JRO.dll
+D:\WORK\Projex\RM Manager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.frmImport.resources
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.Resources.resources
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.frmReport.resources
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.vSplash.resources
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM_Manager.frmMain.resources
+D:\WORK\Projex\RM Manager\obj\x86\Debug\RM Manager.vbproj.GenerateResource.Cache

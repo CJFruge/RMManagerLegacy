@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WarSetup-Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" projectRunAfterInstall="true" mainTargetApp="ID_5fe58fb5_2fe8_4919_b2ff_eec931eb0973" nextUniqueId="1175" projectName="RM Manager" projectUuid="3f1bb623-71e8-4690-9b4e-80325692d42d" projectUpgradeUuid="3875c21c-ac31-4888-bd49-fda1b18299a2" projectVersion="1.0.0.0" projectOrganization="Ventus LLC" projectFromWindowsVersion="Windows 2000" projectMustBeAdministratorToInstall="false" project64BitTarget="false" projectTargetDirectory="E:\Projex\RM Manager\Install" projectTargetName="RMManager_Setup" projectType="0" projectUserInterface="WixUI_Advanced">
+  <LicencePaths>
+    <string>C:\Program Files\Jgaa's Internet\War Setup\Licenses</string>
+  </LicencePaths>
+  <Virgin>true</Virgin>
+  <projectFeatures featureId="ID24898F56547F5A5C671A1117D7D42C7F" featureName="RM Manager" featureDescription="The complete package" configurableDirectory="APPLICATIONFOLDER" configurableDirectoryDefaultPath="[ProjectName]" enableInDefaultInstall="true" enableInMinimalInstall="true" excludeFromBuild="false">
+    <childFeatures featureId="ID24705ED4476DD2BACC1CFA9663CECCD7" featureName="Desktop Icon" featureDescription="Adds a Desktop Icon" enableInDefaultInstall="true" enableInMinimalInstall="false" excludeFromBuild="false">
+      <defaultInstallMode>0</defaultInstallMode>
+    </childFeatures>
+    <childFeatures featureId="ID195508D77BBA1749B1F6E89F5AAF60E0" featureName="Quick Launch Icon" featureDescription="Adds an icon to your Quick Launch Toolbar" enableInDefaultInstall="true" enableInMinimalInstall="false" excludeFromBuild="false">
+      <defaultInstallMode>0</defaultInstallMode>
+    </childFeatures>
+    <components componentId="ID1001" componentGuid="b2100bb8-e647-4ce3-8bc3-93de872b0c3a">
+      <componentFiles fileId="ID_2eebf386_403b_4429_ad09_6a1862776944" srcName="DiskContents.rdlc" srcDirectory="E:\Projex\RM Manager\bin\Release" dstName="DiskContents.rdlc" dstPath="" isTrueTypeFont="false" isComModule="false" typelibGuid="" menuName="DiskContents" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutInStartupFolder="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+        <service StartWhenInstalled="true" Remove="both" id="ID1000" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+      </componentFiles>
+      <addToCreateFolder>false</addToCreateFolder>
+    </components>
+    <components componentId="ID1003" componentGuid="73e3d8db-232c-48f9-bd2d-df8e464e3a46">
+      <componentFiles fileId="ID_a76ad5ab_f62a_4be4_89e5_de1c09292713" srcName="Interop.JRO.dll" srcDirectory="E:\Projex\RM Manager\bin\Release" dstName="Interop.JRO.dll" dstPath="" isTrueTypeFont="false" isComModule="false" typelibGuid="" menuName="Interop.JRO" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutInStartupFolder="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+        <service StartWhenInstalled="true" Remove="both" id="ID1002" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+      </componentFiles>
+      <addToCreateFolder>false</addToCreateFolder>
+    </components>
+    <components componentId="ID1005" componentGuid="cd4d44c8-2eb2-42be-bb80-10b78afc9f0b">
+      <componentFiles fileId="ID_5fe58fb5_2fe8_4919_b2ff_eec931eb0973" srcName="RM Manager.exe" srcDirectory="E:\Projex\RM Manager\bin\Release" dstName="RM Manager.exe" dstPath="" isTrueTypeFont="false" isComModule="false" typelibGuid="" menuName="Removable Media Manager" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutInStartupFolder="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+        <service StartWhenInstalled="true" Remove="both" id="ID1004" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+      </componentFiles>
+      <addToCreateFolder>false</addToCreateFolder>
+    </components>
+    <components componentId="ID1007" componentGuid="350d03d0-e0ce-466e-a035-3557374a980f">
+      <componentFiles fileId="ID_0cf3b559_f742_4893_95c6_651f5e6252a8" srcName="RMMConfig.xml" srcDirectory="E:\Projex\RM Manager\bin\Release" dstName="RMMConfig.xml" dstPath="" isTrueTypeFont="false" isComModule="false" typelibGuid="" menuName="RMMConfig" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutInStartupFolder="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+        <service StartWhenInstalled="true" Remove="both" id="ID1006" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+      </componentFiles>
+      <addToCreateFolder>false</addToCreateFolder>
+    </components>
+    <components componentId="ID1009" componentGuid="14580eed-c751-4c52-bae7-8d47dff540ff">
+      <componentFiles fileId="ID_ff01330d_8592_4631_81cc_bf4baa2c6509" srcName="RMMProcDefs.xml" srcDirectory="E:\Projex\RM Manager\bin\Release" dstName="RMMProcDefs.xml" dstPath="" isTrueTypeFont="false" isComModule="false" typelibGuid="" menuName="RMMProcDefs" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutInStartupFolder="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+        <service StartWhenInstalled="true" Remove="both" id="ID1008" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+      </componentFiles>
+      <addToCreateFolder>false</addToCreateFolder>
+    </components>
+    <components componentId="ID1011" componentGuid="42242f45-1ce8-4549-8a62-aed41f3db237">
+      <componentFiles fileId="ID_4cb3411c_f154_4924_bc5c_037ad3b36787" srcName="TEMPLATE.dat" srcDirectory="E:\Projex\RM Manager\bin\Release" dstName="TEMPLATE.dat" dstPath="" isTrueTypeFont="false" isComModule="false" typelibGuid="" menuName="TEMPLATE" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutInStartupFolder="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+        <service StartWhenInstalled="true" Remove="both" id="ID1010" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+      </componentFiles>
+      <addToCreateFolder>false</addToCreateFolder>
+    </components>
+    <components componentId="ID1136" componentGuid="47a9a665-7942-4ff2-916c-4bbb8e953c3a">
+      <componentFiles fileId="ID_f45a201b_b076_4513_b6c8_61eae762bbae" srcName="jigsaw.ico" srcDirectory="E:\Projex\RM Manager\Resources" dstName="RMManager.ico" dstPath="" isTrueTypeFont="false" isComModule="false" typelibGuid="" menuName="RMManager" shortcutInProgramFilesMenu="false" shortcutOnDesktop="false" shortcutInQuickLaunch="false" shortcutInStartupFolder="false" shortcutWorkingDirectory="" shortcutCommandArguments="" shortcutDescription="">
+        <service StartWhenInstalled="true" Remove="both" id="ID1135" isService="false" userAccount="" userPassword="" cmdLineArguments="" errorControl="normal" interactive="false" loadOrderGroup="" serviceName="" startMode="auto" vital="true" />
+      </componentFiles>
+      <addToCreateFolder>false</addToCreateFolder>
+    </components>
+    <defaultInstallMode>3</defaultInstallMode>
+  </projectFeatures>
+  <projectInstallForCurrentOrAllUsers>2</projectInstallForCurrentOrAllUsers>
+  <License>
+    <System>true</System>
+    <Name>Common Public License Version 1.0</Name>
+  </License>
+  <projectProperties LicencePath="" TopBanner="e:\projex\rm manager\resources\jigsaw.bmp" BigBanner="e:\projex\rm manager\resources\jigsaw.bmp" ExclamationIcon="" InfoIcon="" NewIcon="" UpIcon="" VS2003Integration="VS2003_INTEGRATION" VS2005Integration="VS2005_INTEGRATION" UseRelativePaths="true" LaunchAppText="Launch Removable Media Manager" UseWixUI_ErrorProgressText="true" UseWixUI="true" CreateUninstallShortcut="false" Codepage="1252" ProductLanguage="1033" AlwaysMajorUpgrade="true" SupressValidation="false" Compress="true" BuildTarget="true" PublisherUrl="" SupportContact="" SupportUrl="" SupportPhone="" ReadMeFile="" UpdateUrl="" Comments="" Icon="[APPLICATIONFOLDER]\RMManager.ico" EmbedCab="true" MaxCabSize="0" CabCompressionLevel="mszip" InstallerVersion="300">
+    <UiCultures Name="en-US" Enabled="true" />
+    <UiCultures Name="de-de" Enabled="false" />
+    <UiCultures Name="es-es" Enabled="false" />
+    <UiCultures Name="nl-nl" Enabled="false" />
+  </projectProperties>
+</WarSetup-Project>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Removable Media Manager Configuration Template        -->
+<!-- © 2010 Ventus LLC.  All Rights Reserved.              -->
+<root>
+  <Version>100</Version>
+  <MainForm>
+    <Top>00</Top>
+    <Left>0</Left>
+    <Width>0</Width>
+    <Height>0</Height>
+  </MainForm>
+  <UserOptions>
+    <RMMFilePath></RMMFilePath>
+    <AutoScan>True</AutoScan>
+    <ListView>Details</ListView>
+    <SearchType>Search All (Files, Aliases, Folders)</SearchType>
+    <InfoHeight>100</InfoHeight>
+    <TreeWidth>100</TreeWidth>
+    <LastSearch></LastSearch>
+    <Balloons>True</Balloons>
+  </UserOptions>
+  <lvmColWidth>
+    <_c01>
+      <Value>100</Value>
+    </_c01>
+    <_c02>
+      <Value>100</Value>
+    </_c02>
+    <_c03>
+      <Value>100</Value>
+    </_c03>
+    <_c04>
+      <Value>100</Value>
+    </_c04>
+    <_c05>
+      <Value>100</Value>
+    </_c05>
+    <_c06>
+      <Value>100</Value>
+    </_c06>
+    <_c07>
+      <Value>100</Value>
+    </_c07>
+    <_c08>
+      <Value>100</Value>
+    </_c08>
+    <_c09>
+      <Value>100</Value>
+    </_c09>
+    <_c10>
+      <Value>100</Value>
+    </_c10>
+  </lvmColWidth>
+</root>

@@ -1,0 +1,1 @@
+In the event of a patch or update that requires changes to be made in the databases you have created, run Removable Media Manager in this mode to update your databases.
